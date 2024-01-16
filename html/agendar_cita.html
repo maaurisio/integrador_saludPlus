@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="copyright" content="MACode ID, https://macodeid.com/">
+    <title>Agendar Cita</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-medical-cross' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M13 3a1 1 0 0 1 1 1v4.535l3.928 -2.267a1 1 0 0 1 1.366 .366l1 1.732a1 1 0 0 1 -.366 1.366l-3.927 2.268l3.927 2.269a1 1 0 0 1 .366 1.366l-1 1.732a1 1 0 0 1 -1.366 .366l-3.928 -2.269v4.536a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-4.536l-3.928 2.268a1 1 0 0 1 -1.366 -.366l-1 -1.732a1 1 0 0 1 .366 -1.366l3.927 -2.268l-3.927 -2.268a1 1 0 0 1 -.366 -1.366l1 -1.732a1 1 0 0 1 1.366 -.366l3.928 2.267v-4.535a1 1 0 0 1 1 -1h2z' /%3E%3C/svg%3E"
+        type="image/svg+xml">
+
+    <link rel="stylesheet" href="../assets/css/maicons.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+
+    <style>
+        section {
+            background-color: #f8f9fa;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(61, 55, 55, 0.24);
+            margin-top: 5px;
+            /* Ajuste del margen superior */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            display: grid;
+            gap: 16px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .horizontal-text {
+            display: flex;
+            gap: 20px;
+        }
+
+        .horizontal-text p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Back to top button -->
+    <div class="back-to-top"></div>
+
+    <header>
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 text-sm">
+                        <div class="site-info">
+                            <a href="#"><span class="mai-call text-primary"></span> +593 98 765 432</a>
+                            <span class="divider">|</span>
+                            <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-right text-sm">
+                        <div class="social-mini-button">
+                            <a href="#"><span class="mai-logo-facebook-f"></span></a>
+                            <a href="#"><span class="mai-logo-twitter"></span></a>
+                            <a href="#"><span class="mai-logo-dribbble"></span></a>
+                            <a href="#"><span class="mai-logo-instagram"></span></a>
+                        </div>
+                    </div>
+                </div> <!-- .row -->
+            </div> <!-- .container -->
+        </div> <!-- .topbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span class="text-primary">Salud</span>-Plus</a>
+
+                <form id="searchForm" action="#">
+                    <div class="input-group input-navbar">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="icon-addon1"><span class="mai-search"></span></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Buscar" aria-label="Search"
+                            aria-describedby="icon-addon1">
+                    </div>
+                </form>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport"
+                    aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupport">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctors.html">Doctores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary ml-lg-3" href="#">Acceder / Registrar</a>
+                        </li>
+                    </ul>
+                </div> <!-- .navbar-collapse -->
+            </div> <!-- .container -->
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <form id="appointmentForm" action="#">
+                <h2>Agenda tu Cita</h2>
+
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" placeholder="Número de Cédula" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="correo@example.com" required>
+
+                <label for="especialidad">Especialidad:</label>
+                <input type="text" id="especialidad" name="especialidad" placeholder="Especialidad médica" required>
+
+                <label for="fechaCita">Fecha de la Cita:</label>
+                <input type="date" id="fechaCita" name="fechaCita" required>
+
+                <label for="horaCita">Hora de la Cita:</label>
+                <input type="time" id="horaCita" name="horaCita" required>
+
+                <!-- Mensajes de texto horizontal -->
+                <div class="horizontal-text">
+                    <p>Horarios Disponibles:</p>
+                    <p>8:00 AM - 10:00 AM</p>
+                    <p>2:00 PM - 4:00 PM</p>
+                    <p>6:00 PM - 8:00 PM</p>
+                </div>
+
+                <div class="horizontal-text">
+                    <p>Especialidades Disponibles:</p>
+                    <p>Cardiología</p>
+                    <p>Neurología</p>
+                    <p>Ortopedia</p>
+                </div>
+
+                <button type="submit">Agendar Cita</button>
+            </form>
+        </div>
+    </section>
+
+    <style>
+        .horizontal-text {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+            /* Ajuste del margen superior */
+        }
+
+        .horizontal-text p {
+            margin: 0;
+        }
+    </style>
+
+
+</body>
+
+</html>
